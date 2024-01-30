@@ -56,11 +56,10 @@ class EditarImagemFragment : Fragment() {
 
                 val imagemPerfilUsuario = JSONObject(response.body().toString()).getString("url_img")
 
-                val urlImagem = "http://172.16.27.219:8099/img" + imagemPerfilUsuario
+                val urlImagem = "http://172.16.27.219:8099/img/" + imagemPerfilUsuario
 
                 // Usar Picasso para carregar e exibir a imagem na ImageView
                 Picasso.get().load(urlImagem).into(viewImagemPerfil)
-
             }
 
             override fun onFailure(call: Call<JsonObject>, t: Throwable) {
