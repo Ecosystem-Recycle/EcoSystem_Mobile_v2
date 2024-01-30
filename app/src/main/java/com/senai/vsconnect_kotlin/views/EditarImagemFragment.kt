@@ -1,5 +1,6 @@
 package com.senai.vsconnect_kotlin.views
 
+import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -11,6 +12,7 @@ import com.senai.vsconnect_kotlin.R
 import com.senai.vsconnect_kotlin.apis.EndpointInterface
 import com.senai.vsconnect_kotlin.apis.RetrofitConfig
 import com.senai.vsconnect_kotlin.databinding.FragmentEditarImagemBinding
+import com.squareup.picasso.Picasso
 import org.json.JSONObject
 import retrofit2.Call
 import retrofit2.Callback
@@ -33,7 +35,14 @@ class EditarImagemFragment : Fragment() {
     ): View {
 
         _binding = FragmentEditarImagemBinding.inflate(inflater, container, false)
+
         val root: View = binding.root
+
+        val sharedPreferences = requireContext().getSharedPreferences("idUsuario", Context.MODE_PRIVATE)
+
+        val idUsuario = sharedPreferences.getString("idUsuario", "")
+
+        buscarUsuarioPorID(idUsuario.toString())
 
         return root
     }
@@ -49,7 +58,8 @@ class EditarImagemFragment : Fragment() {
 
                 val urlImagem = "http://172.16.27.219:8099/img" + imagemPerfilUsuario
 
-
+                // Usar Picasso para carregar e exibir a imagem na ImageView
+                Picasso.get().load(urlImagem).into(viewImagemPerfil)
 
             }
 
