@@ -8,9 +8,12 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    //paleta de cores do VSConnect
-    <color name="rosa">#C12D6D</color>
-    <color name="azul_turquesa">#0C7EAE</color>
-    <color name="azul_marinho">#060821</color>
-    <color name="azul_marinho_fundo_menu">#80060821</color>
+    //Paleta de Cores do Eco System e Recycle
+    <color name="azul">#1EB7D9</color>
+    <color name="verde">#1C8C6C</color>
+    <color name="amarelo">#EAF207</color>
+    <color name="pastel">#EEF280</color>
+    <color name="verde_musgo">#99A554</color>
+    <color name="preto">#000000</color>
+    <color name="cinza">#F2F2F2</color>
 </resources>

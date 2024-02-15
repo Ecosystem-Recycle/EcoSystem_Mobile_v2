@@ -9,9 +9,29 @@
 
     //nomes das opçoes do menu de navegação
     <string name="menu_login">Sair</string>
-    <string name="menu_lista_servicos">Serviços</string>
-    <string name="menu_editar_imagem">Editar Imagem</string>
+    <string name="menu_nossa_historia">Nossa História</string>
+    <string name="menu_institucional">Institucional</string>
 
     <string name="escolher_imagem">Escolher imagem</string>
     <string name="capturar_imagem">Capturar imagem</string>
+    <string name="nossa_hist_ria">Nossa História</string>
+    <string name="um_pouco_sobre_n_s">Um Pouco Sobre Nós</string>
+    <string name="com_as_dificuldades_ambientais_que_estamos_enfrentando_com_efeito_estufa_e_outros_fen_menos_da_natureza_a_empresa_volksvagem_compreendeu_a_necessidade_urgente_de_criar_solu_es_para_resolver_parte_do_vil_o_que_contribuem_para_estes_problemas_e_desenvolver_no_tocante_social_e_econ_mico_com_a_convic_o_de_poder_acelerar_a_mudan_a_de_cen_rio_reuniu_parceiros_e_doadores_para_com_objetivos_de_desenvolvimento_sustent_vel_dessa_forma_eco_system_recycle_nasceu_da_necessidade_por_solu_es_que_acelerem_iniciativas_de_forma_r_pida_e_org_nica_tornando_se_empresa_de_impacto_socio_ambiental">
+        <![CDATA[Com as dificuldades ambientais que estamos enfrentando com efeito estufa e outros fenômenos da natureza a empresa Volksvagem compreendeu a necessidade urgente de criar soluções para resolver parte do vilão que contribuem para estes problemas e desenvolver no tocante social e econômico. Com a convicção de poder acelerar a mudança de cenário reuniu parceiros e doadores para com objetivos de desenvolvimento sustentável. Dessa forma Eco System & Recycle nasceu da necessidade por soluções que acelerem iniciativas de forma rápida e orgânica tornando se empresa de impacto socio ambiental.]]></string>
+    <string name="miss_o">Missão</string>
+    <string name="investimentos_industriais_e_financeiros_trazendo_a_sustentabilidade_financeira_e_o_impacto_positivo_ao_meio_ambiente_para_sociedade_atrav_s_da_tecnologia">
+        Investimentos industriais e financeiros, trazendo a sustentabilidade financeira e o impacto positivo ao meio
+        ambiente para sociedade através da tecnologia.
+    </string>
+    <string name="vis_o">Visão</string>
+    <string name="melhorar_a_situa_o_socioecon_mico_e_do_meio_ambiente_para_garantir_que_sejam_atendidos_de_acordo_com_as_metas_dos_objetivos_do_desenvolvimento_sustent_vel_e_das_boas_pr_ticas_esg_governan_a_ambiental_social_e_corporativa">
+        Melhorar a situação socioeconômico e do meio ambiente, para garantir que, sejam atendidos de acordo com as metas
+        dos objetivos do desenvolvimento sustentável e das boas práticas ESG (governança ambiental, social e
+        corporativa).
+    </string>
+    <string name="valores">Valores</string>
+    <string name="acelerar_o_desenvolvimento_ambiental_sustentabilidade_economia_circular_descarte_correto_sa_de_da_popula_o_nossa_prioridade">
+        Acelerar o desenvolvimento ambiental, sustentabilidade, economia circular, descarte correto, saúde da população
+        é nossa prioridade.
+    </string>
 </resources>

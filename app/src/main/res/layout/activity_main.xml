@@ -24,6 +24,6 @@
             app:headerLayout="@layout/nav_header_main"
             app:menu="@menu/activity_main_drawer"
             app:itemShapeFillColor="@color/style_menu_item"
-            app:itemTextColor="@color/azul_marinho"
+            app:itemTextColor="@color/verde"
     />
 </androidx.drawerlayout.widget.DrawerLayout>

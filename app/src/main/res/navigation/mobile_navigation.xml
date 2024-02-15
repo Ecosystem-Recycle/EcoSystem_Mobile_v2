@@ -8,7 +8,7 @@
     <fragment
             android:id="@+id/nav_editar_imagem"
             android:name="com.senai.vsconnect_kotlin.views.EditarImagemFragment"
-            android:label="@string/menu_editar_imagem"
+            android:label="@string/menu_institucional"
             tools:layout="@layout/fragment_editar_imagem">
 
         <action android:id="@+id/action_nav_editar_imagem_to_nav_servicos" app:destination="@id/nav_servicos"/>
@@ -23,7 +23,7 @@
     <fragment
             android:id="@+id/nav_servicos"
             android:name="com.senai.vsconnect_kotlin.views.ListaServicosFragment"
-            android:label="@string/menu_lista_servicos"
+            android:label="@string/menu_nossa_historia"
             tools:layout="@layout/fragment_lista_servicos">
 
         <action android:id="@+id/action_nav_servicos_to_nav_editar_imagem" app:destination="@id/nav_editar_imagem"/>

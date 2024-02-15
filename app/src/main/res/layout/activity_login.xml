@@ -6,31 +6,31 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".LoginActivity"
-        android:background="@color/azul_marinho"
+        android:background="@color/cinza"
         android:padding="20dp"
 >
 
     <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/logo_light"
+            android:layout_width="207dp"
+            android:layout_height="157dp"
+            android:src="@drawable/logo_sem_fundo"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="80dp" android:id="@+id/imageView"/>
+            android:layout_marginTop="50dp" android:id="@+id/imageView"/>
     <TextView
             android:text="E-mail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/titulo_email"
-            android:textColor="@color/white" android:textSize="20dp"
-            android:fontFamily="@font/titilliumweb_light" app:layout_constraintTop_toBottomOf="@+id/imageView"
-            android:layout_marginTop="140dp" app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@color/verde_musgo" android:textSize="20dp"
+            android:fontFamily="@font/inter_regular" app:layout_constraintTop_toBottomOf="@+id/imageView"
+            android:layout_marginTop="90dp" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"/>
     <TextView
             android:text="Senha"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/titulo_senha"
-            android:textColor="@color/white" android:textSize="20dp"
-            android:fontFamily="@font/titilliumweb_light" app:layout_constraintTop_toBottomOf="@+id/campo_email"
+            android:textColor="@color/verde_musgo" android:textSize="20dp"
+            android:fontFamily="@font/inter_regular" app:layout_constraintTop_toBottomOf="@+id/campo_email"
             android:layout_marginTop="40dp" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.002"/>
     <EditText
@@ -68,7 +68,7 @@
             android:fontFamily="@font/titilliumweb_bold"
             android:textSize="20dp"
             android:textColor="@color/white"
-            android:backgroundTint="@color/rosa"
+            android:backgroundTint="@color/verde"
 
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/campo_senha" android:layout_marginTop="40dp"/>

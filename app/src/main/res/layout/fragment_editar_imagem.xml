@@ -1,52 +1,152 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+
+<ScrollView
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".views.EditarImagemFragment"
-        android:background="@color/azul_marinho"
+        android:background="@color/cinza"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
 >
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+    >
 
-    <TextView
-            android:id="@+id/titulo_editar_imagem"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:textSize="30dp"
-            android:text="Editar Imagem de Perfil"
-            android:textColor="@color/white"
-            android:fontFamily="@font/titilliumweb_bold"
+        <TextView
+                android:id="@+id/titulo_editar_imagem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:text="@string/nossa_hist_ria"
+                android:textColor="@color/verde_musgo"
+                android:fontFamily="@font/poppins_extrabold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+        />
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="104dp"
+                app:srcCompat="@drawable/grupon_historia"
+                android:id="@+id/imageViewGrupo"
+                android:layout_marginTop="10dp"
+        />
+        <TextView
+                android:text="@string/um_pouco_sobre_n_s"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textSobre"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:textColor="@color/verde"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp"
+        />
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/com_as_dificuldades_ambientais_que_estamos_enfrentando_com_efeito_estufa_e_outros_fen_menos_da_natureza_a_empresa_volksvagem_compreendeu_a_necessidade_urgente_de_criar_solu_es_para_resolver_parte_do_vil_o_que_contribuem_para_estes_problemas_e_desenvolver_no_tocante_social_e_econ_mico_com_a_convic_o_de_poder_acelerar_a_mudan_a_de_cen_rio_reuniu_parceiros_e_doadores_para_com_objetivos_de_desenvolvimento_sustent_vel_dessa_forma_eco_system_recycle_nasceu_da_necessidade_por_solu_es_que_acelerem_iniciativas_de_forma_r_pida_e_org_nica_tornando_se_empresa_de_impacto_socio_ambiental"
+                  android:fontFamily="@font/inter_regular"
+                  android:textSize="15sp"
+                  android:textColor="@color/black"
+                  android:textStyle="normal"
+                  android:textAlignment="center"
+                  android:layout_marginTop="15dp"
+                  android:id="@+id/textView5"
+        />
+        <TextView
+                android:text="@string/miss_o"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textMissao"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:textColor="@color/verde"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp"
+        />
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="104dp"
+                app:srcCompat="@drawable/icone_missao"
+                android:id="@+id/imageViewMissao"
+                android:layout_marginTop="10dp"
+        />
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/investimentos_industriais_e_financeiros_trazendo_a_sustentabilidade_financeira_e_o_impacto_positivo_ao_meio_ambiente_para_sociedade_atrav_s_da_tecnologia"
+                  android:fontFamily="@font/inter_regular"
+                  android:textSize="15sp"
+                  android:textColor="@color/black"
+                  android:textStyle="normal"
+                  android:textAlignment="center"
+                  android:layout_marginTop="15dp"
+                  android:id="@+id/textView6"
+        />
+        <TextView
+                android:text="@string/vis_o"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textVisao"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:textColor="@color/verde"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp"
+        />
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="104dp"
+                app:srcCompat="@drawable/icone_visao"
+                android:id="@+id/imageViewVisao"
+                android:layout_marginTop="10dp"
+        />
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/melhorar_a_situa_o_socioecon_mico_e_do_meio_ambiente_para_garantir_que_sejam_atendidos_de_acordo_com_as_metas_dos_objetivos_do_desenvolvimento_sustent_vel_e_das_boas_pr_ticas_esg_governan_a_ambiental_social_e_corporativa"
+                  android:fontFamily="@font/inter_regular"
+                  android:textSize="15sp"
+                  android:textColor="@color/black"
+                  android:textStyle="normal"
+                  android:textAlignment="center"
+                  android:layout_marginTop="15dp"
+                  android:id="@+id/textView7"
+        />
+        <TextView
+                android:text="@string/valores"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textValores"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:textColor="@color/verde"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp"
+        />
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="104dp"
+                app:srcCompat="@drawable/icone_valores"
+                android:id="@+id/imageViewValores"
+                android:layout_marginTop="10dp"
+        />
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/acelerar_o_desenvolvimento_ambiental_sustentabilidade_economia_circular_descarte_correto_sa_de_da_popula_o_nossa_prioridade"
+                  android:fontFamily="@font/inter_regular"
+                  android:textSize="15sp"
+                  android:textColor="@color/black"
+                  android:textStyle="normal"
+                  android:textAlignment="center"
+                  android:layout_marginTop="15dp"
+                  android:id="@+id/textView8"
+                  android:layout_marginBottom="35dp"
+        />
 
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-    />
+    </LinearLayout>
 
-
-    <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="250dp"
-            android:layout_height="250dp"
-            android:id="@+id/id_view_imagem_perfil"
-            app:civ_border_width="2dp"
-            app:civ_circle_background_color="@color/white"
-            android:scaleType="centerCrop"
-            android:src="@drawable/ic_launcher_background"
-            app:layout_constraintTop_toBottomOf="@+id/titulo_editar_imagem"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-    />
-
-    <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:id="@+id/icone_lapis"
-            android:src="@drawable/icone_lapis"
-            app:layout_constraintTop_toTopOf="@+id/id_view_imagem_perfil"
-            app:layout_constraintStart_toStartOf="@+id/id_view_imagem_perfil"
-            app:layout_constraintEnd_toEndOf="@+id/id_view_imagem_perfil"
-            app:layout_constraintBottom_toBottomOf="@+id/id_view_imagem_perfil"
-            app:layout_constraintHorizontal_bias="1.0" app:layout_constraintVertical_bias="1.0"/>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

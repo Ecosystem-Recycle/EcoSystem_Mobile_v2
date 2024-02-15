@@ -58,28 +58,28 @@ class EditarImagemFragment : Fragment() {
 
         buscarUsuarioPorID(idUsuario.toString())
 
-        val iconeLapis = root.findViewById<ImageView>(R.id.icone_lapis)
+        //val iconeLapis = root.findViewById<ImageView>(R.id.icone_lapis)
 
-        iconeLapis.setOnClickListener {
-            mostrarOpcoesEscolhaImagem()
-        }
+        //iconeLapis.setOnClickListener {
+        //mostrarOpcoesEscolhaImagem()
+        //}
 
         return root
     }
 
     private fun buscarUsuarioPorID(idUsuario: String) {
-        endpoints.buscarUsuarioPorID(UUID.fromString(idUsuario)).enqueue(object : Callback<JsonObject>{
+     endpoints.buscarUsuarioPorID(UUID.fromString(idUsuario)).enqueue(object : Callback<JsonObject>{
             override fun onResponse(call: Call<JsonObject>, response: Response<JsonObject>) {
                 val root: View = binding.root
 
-                val viewImagemPerfil = root.findViewById<ImageView>(R.id.id_view_imagem_perfil)
+                //val viewImagemPerfil = root.findViewById<ImageView>(R.id.id_view_imagem_perfil)
 
                 val imagemPerfilUsuario = JSONObject(response.body().toString()).getString("url_img")
 
                 val urlImagem = "http://172.16.27.219:8099/img/" + imagemPerfilUsuario
 
                 // Usar Picasso para carregar e exibir a imagem na ImageView
-                Picasso.get().load(urlImagem).into(viewImagemPerfil)
+                // Picasso.get().load(urlImagem).into(viewImagemPerfil)
             }
 
             override fun onFailure(call: Call<JsonObject>, t: Throwable) {
@@ -109,7 +109,7 @@ class EditarImagemFragment : Fragment() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
-        val view_imagem_perfil = view?.findViewById<ImageView>(R.id.id_view_imagem_perfil)
+        //val view_imagem_perfil = view?.findViewById<ImageView>(R.id.id_view_imagem_perfil)
 
         if (requestCode == IMAGEM_PERFIL_REQUEST_CODE && resultCode == Activity.RESULT_OK){
             if (data?.data != null){
@@ -119,14 +119,14 @@ class EditarImagemFragment : Fragment() {
 
                 val imagemSelecionadaBitmap = BitmapFactory.decodeStream(inputStream)
 
-                view_imagem_perfil?.setImageURI(imagemSelecionadaUri)
+                //view_imagem_perfil?.setImageURI(imagemSelecionadaUri)
 
                 atualizarImagemPerfil(imagemSelecionadaBitmap)
 
             }else if (data?.action == "inline-data"){
                 // Imagem capturada pela câmera
                 val imagemCapturada = data.extras?.get("data") as Bitmap
-                view_imagem_perfil?.setImageBitmap(imagemCapturada)
+                //view_imagem_perfil?.setImageBitmap(imagemCapturada)
 
                 atualizarImagemPerfil(imagemCapturada)
             }

@@ -38,13 +38,13 @@ class ListaServicosFragment : Fragment() {
         val root: View = binding.root
 
         // organiza os itens da Recycler em ordem vertical, sendo um debaixo do outro
-        binding.recyclerServicos.layoutManager = LinearLayoutManager(requireContext())
+        //binding.recyclerServicos.layoutManager = LinearLayoutManager(requireContext())
 
         endpoints.listarServicos().enqueue(object : Callback<List<Servico>> {
             override fun onResponse(call: Call<List<Servico>>, response: Response<List<Servico>>) {
                 val servicos = response.body()
 
-                binding.recyclerServicos.adapter = servicos?.let { ListaServicoAdapter(requireContext(), it) }
+                //binding.recyclerServicos.adapter = servicos?.let { ListaServicoAdapter(requireContext(), it) }
             }
 
             override fun onFailure(call: Call<List<Servico>>, t: Throwable) {
